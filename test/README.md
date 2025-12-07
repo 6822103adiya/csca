@@ -14,23 +14,10 @@
 
 ## 📦 Суулгах заавар
 
-### 1. Database үүсгэх
-
-```sql
--- config/database.sql файлыг MySQL дээр ажиллуулна
-mysql -u root -p < config/database.sql
-```
 
 ### 2. Database тохиргоо
 
 `config/db.php` файлд өөрийн MySQL мэдээллийг оруулна:
-
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'daam_scholarship');
-define('DB_USER', 'root');
-define('DB_PASS', 'your_password');
-```
 
 ### 3. Uploads folder
 
@@ -42,17 +29,9 @@ chmod 755 uploads
 
 ### 4. Web server
 
-XAMPP, WAMP, Laragon эсвэл PHP built-in server ашиглана:
-
 ```bash
 php -S localhost:8000
 ```
-
-## 🔐 Админ нэвтрэх
-
-- URL: `/admin/login.php`
-- Нэвтрэх нэр: `admin`
-- Нууц үг: `admin123`
 
 ## 📁 Файлын бүтэц
 
@@ -109,4 +88,5 @@ php -S localhost:8000
 ---
 
 © 2025 Даам Тэтгэлэг
+
 
